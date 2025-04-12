@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swathi's Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Include Header -->
+    <div id="header"></div>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Welcome to my website! I'm Swathi, an intellectual and hardworking individual with a passion for technology and innovation.</p>
+    </section>
+
+    <section id="qualification">
+        <h2>Qualification</h2>
+        <ul>
+            <li>Bachelor's Degree in Computer Science</li>
+            <li>Master's Degree in Data Science</li>
+            <li>Ph.D. in Artificial Intelligence (ongoing)</li>
+        </ul>
+    </section>
+
+    <section id="research">
+        <h2>Research</h2>
+        <p>My research focuses on machine learning, artificial intelligence, and big data analytics. I am currently working on projects related to deep learning algorithms and natural language processing.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: swathi@example.com</p>
+        <p>Phone: +1234567890</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Swathi. All rights reserved.</p>
+    </footer>
+
+    <script>
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
+    </script>
+</body>
+</html>
